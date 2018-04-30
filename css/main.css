@@ -1,0 +1,370 @@
+html {
+    font-family: "Raleway-ExtraBold", sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/*permet de lire des transitions d'effet sur plusieurs navigateurs et est appliqué sur toute la page */
+* {
+    -webkit-transition: all 100ms;
+    -moz-transition: all 100ms;
+    -o-transition: all 100ms;
+    transition: all 100ms;
+}
+
+body {
+    margin: 0;
+}
+
+/*définit épaisseur de h1*/
+h1 {
+    font-weight: 400;
+}
+/*definit épaisseur couleur et taille de h2*/
+h2 {
+    font-weight: 400;
+    color: #444;
+    font-size: 26px;
+}
+
+/*les sections permettent de clarifier la structure de la page*/
+section {
+    min-height: 400px;
+    padding: 40px;
+}
+
+#triangle-topleft {
+    width: 0px;
+    border-top: 740px solid darkgreen;
+    border-right: 1000px solid transparent;
+    opacity: 0.5;
+    position: absolute;
+    top: 0%;
+    left: 0px;
+}
+
+
+#header {
+    border: 0px;
+    width: 87%;
+    padding: 20px;
+    background-repeat: no-repeat; /*ne repete pas l image du background */
+    background-size: cover; /* s etale sur toute la header*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    margin: 0 auto;
+    left: 5%;
+    z-index: 3; /*permet d agencer les dispositions et dans un espace en 3 dimensions */
+}
+
+#brand {
+    height: 180px;
+    width: 600px;
+    margin-top: 75px;
+    margin-left: 40px;
+    z-index: 20000;
+    position: absolute;
+}
+
+#logo img {
+    width: 70px;
+    height: 70px;
+}
+
+li.menu {
+    margin-right: 700px;
+}
+
+.menu2 ul {
+    list-style: none;
+    overflow: hidden; /*debordement caché */
+    position: fixed;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-left: 70px;
+    z-index: 10;
+}
+
+.menu2 li {
+    width: 200px;
+    border-bottom: none;
+    height: 40px;
+    line-height: 50px;
+    font-size: 1.4em;
+    float: right; /* fait flotter vers la droite */
+}
+
+.menu2 a {
+    /*
+    float: right;
+     */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 0px;
+    padding-bottom: 30px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* quand on passe la souris*/
+.menu2 a:hover {
+    color: white;
+    transition: .3s background-color;
+}
+
+.menu2 a.active {
+    color: greenyellow;
+}
+
+.summary {
+    text-align: center;
+    padding: 30px 30px;
+}
+
+.middlepage {
+    margin: auto;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.gallery {
+    padding: 30px 10px;
+}
+
+.gallery img {
+    width: 40%;
+    height: 230px;
+    border: 0;
+    box-shadow: 0px 1px 10px 3px #d0cdcd; /*ombres*/
+    margin: 20px;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    width: 45%;
+    height: 300px;
+}
+
+ul.products li {
+    background-color: #ffffff;
+    color: #333333;
+    width: 300px;
+    border: 1px solid #cecece;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+ul.products li:hover {
+    box-shadow: 0px 1px 10px 3px #d0cdcd;
+}
+
+/* section footer */
+
+#footer {
+    background-color: #439354;
+    color: white;
+    margin: 0;
+    text-align: center;
+    height: auto;
+    min-height: auto;
+
+    font-size: 16px;
+    font-weight: 300;
+}
+
+#logo2 {
+    width: 80px;
+    height: 90px;
+    border: 0;
+    padding: 0;
+}
+
+#footer .social-links {
+    padding: 0;
+}
+
+#footer .social-links li {
+    display: inline;
+    color: #ffffff;
+    margin: 5px;
+}
+
+#footer .social-links li:hover {
+    font-size: 18px;
+}
+
+.copyright {
+    letter-spacing: 3px;
+}
+
+/* !section footer */
+
+/* Apparence des entrées  */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+/* apparence du bouton "envoyé" du formulaire  */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* état du bouton "envoyé" quand on passe la souris */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* couleur et padding autour du formulaire de contact */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.btn1 {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    /*text-transform: capitalize;*/
+    display: inline-block;
+}
+
+.btn1:hover {
+    background-color: #45a049;
+    color: #f2f2f2;
+    font-size: 18px;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+}
+
+/* top menu */
+#top-menu {
+    width: 40%;
+    float: right;
+    text-align: center;
+    padding: 0;
+    display: table;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#top-menu li {
+    z-index: 1000;
+    display: table-cell;
+    max-width: 200px;
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+#top-menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+#top-menu li:hover a {
+    border-bottom: 2px solid #ffffff;
+}
+
+/* !top menu */
+
+/* sections */
+/* welcome */
+.main {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 600px;
+}
+
+#main-welcome {
+    background-image: url(../img/arriereplanbambou.png);
+}
+
+.text-container {
+    margin-bottom: 40px;
+    padding: 0 100px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.green-triangle-container {
+    width: 100%;
+    height: 70%;
+    position: absolute;
+    margin-left: -40px;
+    margin-top: -40px;
+    z-index: 2;
+}
+
+.green-triangle {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(to right bottom, #006400 50%, transparent 50%);
+    opacity: 0.5;
+    position: absolute;
+}
+
+/* !welcome */
+
+/* menu */
+#main-menu {
+    background-image: url(../img/onigiri2.jpg);
+}
+
+/* !menu */
+
+/* history */
+#main-history {
+    background-image: url(../img/presentationonigiri.JPG);
+}
+
+/* !history */
+
+/* contact */
+#main-contact {
+    background-image: url(../img/onigirifriends.jpg);
+}
+
+/* !contact */
+
+/* !sections */

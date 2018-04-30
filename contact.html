@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="lang=fr-FR">
+<head>
+    <meta charset="utf-8">
+    <title>Onigiri-merci</title>
+    <meta name="description" content="japanese cooking">
+    <link rel="icon" type="image/png" href="favicon.ico"/>
+    <link rel="stylesheet" href="font/Raleway/Raleway-ExtraBold.ttf">
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font/bromello/bromello.otf">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<nav id="header">
+    <a id="logo" href="./index.html">
+        <img src="./img/logo%20sans%20ecriture.png" alt="logo">
+    </a>
+    <ul id="top-menu">
+        <li>
+            <a href="./carte.html">Carte</a>
+        </li>
+        <li>
+            <a href="./history.html">Notre histoire</a>
+        </li>
+        <li>
+            <a href="./contact.html">Contact</a>
+        </li>
+    </ul>
+</nav>
+<section id="main-contact" class="main">
+    <div class="green-triangle-container">
+        <div class="green-triangle" style="width: 50%"></div>
+    </div>
+    <img src="./img/enseigne.png" id="brand" alt="brandename">
+</section>
+<section class="container" style="padding-top: 60px;padding-bottom: 60px;">
+    <form style="width: 80%;margin: 0 auto;">
+        <label for="firstname">Prénom</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Votre prenom..">
+        <label for="lastname">Nom de famille</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Votre nom de famille..">
+        <label for="country">Pays</label>
+        <select id="country" name="country">
+            <option value="france">France</option>
+            <option value="canada">Canada</option>
+            <option value="Japan">Japon</option>
+        </select>
+        <label for="subject">Sujet</label>
+        <textarea id="subject" name="subject" placeholder="Ecrivez quelques chose.." style="height:200px"></textarea>
+        <br>
+        <input onclick='alert("Message envoyé!");' type="submit" value="Envoyer">
+    </form>
+</section>
+<section id="footer" class="footer">
+    <div>
+        <img src="./img/logoblanc.png" id="logo2" alt="logo2">
+        <ul class="social-links">
+            <a href="https://www.facebook.com/" target="_blank">
+                <li>
+                    <i class="fa fa-facebook-square fa-3x " aria-hidden="true"></i>
+                </li>
+            </a>
+            <a href="https://twitter.com/?lang=en" target="_blank">
+                <li>
+                    <i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i>
+                </li>
+            </a>
+            <a href="https://www.instagram.com/?hl=en" target="_blank">
+                <li>
+                    <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+                </li>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank">
+                <li>
+                    <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                </li>
+            </a>
+        </ul>
+        <p>
+            Contact information:
+            <a href="mailto:sartorato.alexandra@gmail.com" style="color: #ffffff">sartorato.alexandra@gmail.com </a>
+        </p>
+        <div class="copyright">
+            © 2017 Sartorato Alexandra
+        </div>
+    </div>
+</section>
+</body>
+</html>
